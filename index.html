@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header{
+  height:5%;
+  width:100%
+}
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1250px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          /* width: 45%; */
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+      .button-container {
+  position: fixed; /* Fix the button to the screen */
+  top: 10%; /* Set distance from top */
+  right: 10%; /* Set distance from left */
+  z-index: 100; /* Ensure the button stays above other content */
+}
+      .button {
+        
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 15px;
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; /* Optional */
+    }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="background-color:white;width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0);  padding-bottom:10px;">
+        <img src="Logo_last.png" width="5%" style="float:left; margin-top:1.5%;" class="img-responsive">
+        <span> <img src="header.png" width="30%" height="80%" class="img-responsive"></span>
+      </div>
+
+      <div class="content-container">
+       
+          <div class="lesson-title">Adding Multiples of 10 and 100</div>
+          <div class="lesson-content">
+            <div>
+              <h2>What Are Multiples of 10?</h2>
+              <p>
+                Multiples of 10 are numbers like 10, 20, 30, 40, and so on. They are easy to recognize because they always end with a zero (0).
+                <BR><img src="./images/1.png" alt="" width="40%">
+              </p>
+              <h2>
+                Understanding Place Value:
+                </h2>
+                <ul>
+                  <li>In any number, the tens place tells us how many groups of ten there are, and the ones place tells us the leftover single digits.</li>
+                  <li>When adding multiples of 10, only the tens place changes, while the ones place stays the same.</li>
+                </ul>
+                <h3 style="font-size: 1.6rem; text-align: center;">Example : 47 + 30</h3>
+                <img src="./images/2.png" alt="" width="40%">
+                <p >
+                  Start with 47 (4 tens and 7 ones).
+                  <br>Add 30 (3 tens and 0 ones). 
+                  <br><b>The tens become 4 + 3 = 7, and the ones stay 7 as 7 + 0 = 7.</b>
+                  
+                </p>
+                <div style="display: flex;">
+                  <div> <br><img src="./images/3.png" alt="" width="70%">
+                    </div>
+                  <div><br><img src="./images/4.png" alt="" width="70%"></div>
+                </div>
+                <h3 style="font-size: 1.6rem;text-align: center;">Therefore, the answer is 77 (7 tens and 7 ones).</h3>
+                <br><img src="./images/1.jpg" alt="" width="40%">
+            </div>
+            <hr>
+            <div>
+              <h2>What Are Multiples of 100?</h2>
+              <p>
+                Multiples of 100 are numbers like 100, 200, 300, and so on. They are easy to recognize because they always end in two zeroes (00).
+              </p>
+              <br><img src="./images/5.png" alt="" width="40%">
+              <p>
+                <b>Understanding Place Value:</b> In a three-digit number like 356, the digits represent 3 represents hundreds, 5 represents tens, and 6 represents ones.
+                <br><img src="./images/4.jpg" alt="" width="40%">
+                <br>When you add a multiple of 100, only the hundreds place changes because the tens and ones stay the same.
+              </p>
+              <h3>Steps for Adding Multiples of 100:</h3>
+              <ul>
+                <li><b>Step 1:</b> Identify the number you’re adding to (two-digit or three-digit).</li>
+                <li><b>Step 2:</b> Look at the multiple of 100 you are adding (e.g., 200).</li>
+                <li><b>Step 3:</b> Add the hundreds. The tens and ones remain the same.</li>
+              </ul>
+              <h3>Examples:</h3>
+              <p>
+                <b>Two-digit number:</b> 45 + 200
+                <br><img src="./images/2.jpg" alt="" width="40%">
+                 <br>Start with 45 (4 tens and 5 ones).
+                 <br>Add 200 (2 hundreds).
+                 <br><b>The tens become 4 + 0 = 4, and the ones become 5 + 0 = 5.</b>
+              </p>
+              <div style="display: flex;">
+                <div><br><img src="./images/6.png" alt="" width="70%">
+                  </div>
+                <div><br><img src="./images/7.png" alt="" width="70%"></div>
+              </div>
+              <p style="font-size: 1.6rem; text-align: center;">
+                <b>Therefore, the answer is 245</b>
+              </p>
+              <br>
+              <hr>
+              <br>
+              <h2 style="text-align: center;"> <b><u>Three-digit number:</b> 356 + 300 </u></h2>
+              <p>
+               
+                <br><img src="./images/3.jpg" alt="" width="40%">
+                 <br>Start with 356 (3 hundreds, 5 tens, and 6 ones).
+                 <br>Add 300 (3 hundreds).
+                 <br>
+              </p>
+              <br>
+              <div style="display: flex;">
+                <div><p style="text-align: center;">
+                  <b >The hundreds become  as 3 + 3 = 6 </b>
+                </p>
+                <br><img src="./images/8.png" alt="" width="90%" style="border:2px solid;"></div>
+                <div><p style="text-align: center;">
+                  <b>The tens become 5 as 5 + 0 = 5 </b>
+                </p>
+                <br><img src="./images/9.png" alt="" width="90%" style="border:2px solid;"></div>
+                <div>
+                  <p style="text-align: center;">
+                    <b>The ones become 6 as 6 + 0 = 6</b>
+                  </p>
+                  <br><img src="./images/10.png" alt="" width="90%" style="border:2px solid;">
+                </div>
+              </div>
+              <br>
+              
+              
+              <p style="font-size: 1.6rem; text-align: center;">
+                <b>Therefore, the answer is 656 (6 hundreds, 5 tens, and 6 ones).</b>
+              </p>
+               <br><br><br>
+            </div>
+          
+        
+        
+        
+      </div>
+      
+    </div>
+  </body>
+</html>
